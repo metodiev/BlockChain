@@ -1,0 +1,10 @@
+C:\Users\pc1\Desktop\BitcoinAddressGenerator\BitcoinAddressGenerator\bin\Debug\BitcoinAddressGenerator.exe.config
+C:\Users\pc1\Desktop\BitcoinAddressGenerator\BitcoinAddressGenerator\bin\Debug\BitcoinAddressGenerator.exe
+C:\Users\pc1\Desktop\BitcoinAddressGenerator\BitcoinAddressGenerator\bin\Debug\BitcoinAddressGenerator.pdb
+C:\Users\pc1\Desktop\BitcoinAddressGenerator\BitcoinAddressGenerator\obj\Debug\BitcoinAddressGenerator.csprojResolveAssemblyReference.cache
+C:\Users\pc1\Desktop\BitcoinAddressGenerator\BitcoinAddressGenerator\obj\Debug\BitcoinAddressGenerator.exe
+C:\Users\pc1\Desktop\BitcoinAddressGenerator\BitcoinAddressGenerator\obj\Debug\BitcoinAddressGenerator.pdb
+C:\Users\Miroslav\Desktop\RuunableJar\BitcoinAddressGeneratorCSharpEdition\BitcoinAddressGenerator\bin\Debug\BitcoinAddressGenerator.exe.config
+C:\Users\Miroslav\Desktop\RuunableJar\BitcoinAddressGeneratorCSharpEdition\BitcoinAddressGenerator\obj\Debug\BitcoinAddressGenerator.exe
+C:\Users\Miroslav\Desktop\RuunableJar\BitcoinAddressGeneratorCSharpEdition\BitcoinAddressGenerator\obj\Debug\BitcoinAddressGenerator.pdb
+C:\Users\Miroslav\Desktop\RuunableJar\BitcoinAddressGeneratorCSharpEdition\BitcoinAddressGenerator\obj\Debug\BitcoinAddressGenerator.csprojResolveAssemblyReference.cache
