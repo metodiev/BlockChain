@@ -1,0 +1,10 @@
+00:26:34:256	9e0350c0	Check and remove old log files...
+00:26:34:256	9e0350c0	args: 
+00:26:34:256	9e0350c0	
+00:26:34:256	9e0350c0	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+00:26:34:256	9e0350c0	บ                Claymore's Dual GPU Miner - v11.8               บ
+00:26:34:256	9e0350c0	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+00:26:34:256	9e0350c0	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+00:26:34:256	9e0350c0	
+00:26:34:256	9e0350c0	b591 
+00:26:34:456	9e0350c0	ETH: No pools specified! Specify at least one valid pool in "-epool" parameter. 

@@ -1,0 +1,19 @@
+ 
+HTTP_PORT=3001 P2P_PORT=6001 npm start
+HTTP_PORT=3002 P2P_PORT=6002 PEERS=ws://localhost:6001 npm start
+
+curl -H "Content-type:application/json" --data '{"data" : "ajsdlkfj@!#IJOIdjfsdklfjwioefjlkdsjfsvnsdv"}' http://localhost:3001/mineBlock
+curl -H "Content-type:application/json" --data '{"data" : "Data to the third block"}' http://localhost:3001/mineBlock
+HTTP_PORT=3003 P2P_PORT=6003 PEERS=ws://localhost:6001 npm start
+
+
+time to mine:
+curl -H "Content-type:application/json" --data '{"data" : "MyInfo 1"}' http://localhost:3001/mineBlock
+
+
+http://localhost:3001/mineBlock
+
+{
+    
+    "data": "Some data to the first block"
+}

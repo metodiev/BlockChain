@@ -1,0 +1,157 @@
+23:08:50:797	1b70	Check and remove old log files...
+23:08:50:797	1b70	args: -epool eth-eu1.nanopool.org:9999 -ewal YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL -epsw x -dpool stratum+tcp://sia-eu1.nanopool.org:7777 -dwal YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL -dcoin sia -asm 1 -dcri 20 -ethi 8 -allpools 1 -dbg 1 -r 1 -wd 1 -minspeed 15 -gser 2 -tt 69 -ttdcr 80 -ttli 85 -tstop 91 
+23:08:50:797	1b70	
+23:08:50:797	1b70	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+23:08:50:797	1b70	บ                Claymore's Dual GPU Miner - v11.0               บ
+23:08:50:797	1b70	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+23:08:50:797	1b70	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+23:08:50:797	1b70	
+23:08:50:797	1b70	b501 
+23:08:51:021	1b70	ETH: 1 pool is specified
+23:08:51:021	1b70	Main Ethereum pool is eth-eu1.nanopool.org:9999
+23:08:51:021	1b70	SC: 1 pool is specified
+23:08:51:021	1b70	Main Siacoin pool is sia-eu1.nanopool.org:7777
+23:08:51:067	1b70	OpenCL platform: NVIDIA CUDA
+23:08:51:067	1b70	AMD OpenCL platform not found 
+23:08:51:187	1b70	CUDA initializing...
+
+23:08:51:187	1b70	NVIDIA Cards available: 1 
+23:08:51:187	1b70	CUDA Driver Version/Runtime Version: 9.2/8.0
+23:08:51:187	1b70	GPU #0: GeForce GTX 650, 1024 MB available, 2 compute units, capability: 3.0  (pci bus 1:0:0)
+
+23:08:51:187	1b70	Total cards: 1 
+23:08:51:187	1b70	
+All GPUs are 2GB, miner is completely free in this case, developer fee will not be mined at all.
+See Readme for details.
+
+23:08:55:357	1b70	No AMD cards in the list, ADL library will not be used.
+23:08:55:362	1b70	NVML version: 9.398.11
+23:08:55:427	306c	ETH: Stratum - connecting to 'eth-eu1.nanopool.org' <163.172.162.51> port 9999
+23:08:55:487	306c	send: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL", "x"], "id": 2, "method": "eth_submitLogin"}
+
+23:08:55:487	306c	ETH: Stratum - Connected (eth-eu1.nanopool.org:9999)
+23:08:55:537	1b70	DUAL MINING MODE ENABLED: ETHEREUM+SIACOIN
+23:08:55:537	1b70	ETH: eth-proxy stratum mode
+23:08:55:537	1b70	"-allpools" option is set, default pools can be used for devfee, check "Readme" file for details.
+23:08:55:537	2e88	 SC: Stratum - connecting to 'sia-eu1.nanopool.org' <51.15.89.69> port 7777
+23:08:55:537	1b70	Watchdog enabled
+23:08:55:537	1b70	Remote management (READ-ONLY MODE) is enabled on port 3333
+23:08:55:537	1b70	
+23:08:55:577	306c	got 282 bytes
+23:08:55:577	306c	buf: {"jsonrpc":"2.0","id":2,"result":true}
+{"jsonrpc":"2.0","id":0,"result":["0xe34e09cb1b566279333eda2a0753d5c608f38f6e35a731448662220d573c4133","0xc906fa38eca6c8a38bb932db61ca31b42792bf61ccc7603c4709315e71744ae5","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+23:08:55:577	306c	parse packet: 38
+23:08:55:577	306c	ETH: Authorized
+23:08:55:577	306c	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+23:08:55:577	306c	remove first packet 243
+23:08:55:577	306c	new buf size: 243
+23:08:55:577	306c	parse packet: 242
+23:08:55:577	306c	ETH: job changed
+23:08:55:577	306c	new buf size: 0
+23:08:55:587	2e88	send: {"id": 1, "method": "mining.subscribe", "params": []}
+
+23:08:55:587	2e88	send: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+23:08:55:587	2e88	send: {"id": 2, "method": "mining.authorize", "params": ["YOUR_WALLET/YOUR_WORKER/YOUR_EMAIL",""]}
+
+23:08:55:587	2e88	 SC: Stratum - Connected (sia-eu1.nanopool.org:7777)
+23:08:55:657	306c	got 243 bytes
+23:08:55:657	306c	buf: {"jsonrpc":"2.0","id":0,"result":["0xe34e09cb1b566279333eda2a0753d5c608f38f6e35a731448662220d573c4133","0xc906fa38eca6c8a38bb932db61ca31b42792bf61ccc7603c4709315e71744ae5","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+23:08:55:657	306c	parse packet: 242
+23:08:55:657	306c	ETH: job is the same
+23:08:55:657	306c	new buf size: 0
+23:08:55:717	2e88	got 377 bytes
+23:08:55:717	2e88	buf: {"jsonrpc":"2.0","id":1,"result":true}
+{"id":6,"jsonrpc":"2.0","params":["0","0x000000000000000019e090f7a24b775bf2bd39b6f89c3d1aaa1033e8af94a80f0000000000000000c790195b000000004522171574d04cf14c8d982b53a749dd70004aaa9f87a0443d5f61461cacaa9e","0x0000000007547ff5d321871ff4fb4f118b8d13a30a1ff7b317f3c5b20629578a"],"method":"mining.notify"}
+{"jsonrpc":"2.0","id":2,"result":true}
+
+23:08:55:717	2e88	parse packet: 38
+23:08:55:717	2e88	remove first packet 338
+23:08:55:717	2e88	new buf size: 338
+23:08:55:717	2e88	parse packet: 298
+23:08:55:717	27a4	Setting DAG epoch #191...
+23:08:55:717	2e88	sc: job changed
+23:08:55:717	2e88	remove first packet 39
+23:08:55:717	2e88	new buf size: 39
+23:08:55:717	2e88	parse packet: 38
+23:08:55:717	2e88	 SC: Authorized
+23:08:55:717	2e88	new buf size: 0
+23:08:55:717	2e88	got 299 bytes
+23:08:55:717	2e88	buf: {"id":6,"jsonrpc":"2.0","params":["1","0x000000000000000019e090f7a24b775bf2bd39b6f89c3d1aaa1033e8af94a80f0000000000000000c790195b00000000ccff986e80abfc46c91ea2c3dfc70f162272ea7fbd92596023f3fa52b2efe152","0x0000000007547ff5d321871ff4fb4f118b8d13a30a1ff7b317f3c5b20629578a"],"method":"mining.notify"}
+
+23:08:55:717	2e88	parse packet: 298
+23:08:55:717	2e88	sc: job changed(2)
+23:08:55:717	2e88	new buf size: 0
+23:08:55:717	2e88	 SC: 06/07/18-23:08:55 - New job from sia-eu1.nanopool.org:7777
+23:08:55:717	2e88	target: 
+23:08:57:530	306c	got 243 bytes
+23:08:57:530	306c	buf: {"jsonrpc":"2.0","id":0,"result":["0xd9142b8ed21d2d0b0f47dceb5f2b5fd3f5100c246a4853cc1a24c997ce29dae0","0xc906fa38eca6c8a38bb932db61ca31b42792bf61ccc7603c4709315e71744ae5","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+23:08:57:530	306c	parse packet: 242
+23:08:57:530	306c	ETH: job changed
+23:08:57:530	306c	new buf size: 0
+23:08:57:530	306c	ETH: 06/07/18-23:08:57 - New job from eth-eu1.nanopool.org:9999
+23:08:57:530	306c	target: 0x000000006df37f67 (diff: 10000MH), epoch 191(2.49GB)
+23:08:57:532	306c	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+23:08:57:532	306c	ETH: GPU0 0.000 Mh/s
+23:08:57:532	306c	 SC - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+23:08:57:533	306c	 SC: GPU0 0.000 Mh/s
+23:08:58:311	27a4	Setting DAG epoch #191 for GPU0
+23:08:58:311	27a4	Create GPU buffer for GPU0
+23:08:58:311	27a4	CUDA error - cannot allocate big buffer for DAG. Check readme.txt for possible solutions.
+23:09:01:316	27a4	Set global fail flag, failed GPU0
+23:09:01:316	1bfc	Setting DAG epoch #191 for GPU0
+23:09:01:316	27a4	GPU 0 failed
+23:09:01:316	1bfc	GPU 0, CUDA error 11 - cannot write buffer for DAG
+23:09:04:337	1bfc	Set global fail flag, failed GPU0
+23:09:04:337	1bfc	GPU 0 failed
+23:09:05:597	306c	ETH: checking pool connection...
+23:09:05:597	306c	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+23:09:05:677	306c	got 243 bytes
+23:09:05:677	306c	buf: {"jsonrpc":"2.0","id":0,"result":["0xd9142b8ed21d2d0b0f47dceb5f2b5fd3f5100c246a4853cc1a24c997ce29dae0","0xc906fa38eca6c8a38bb932db61ca31b42792bf61ccc7603c4709315e71744ae5","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+23:09:05:677	306c	parse packet: 242
+23:09:05:677	306c	ETH: job is the same
+23:09:05:677	306c	new buf size: 0
+23:09:15:597	306c	send: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0", "0x00000000000000000000000000000000000000000000000000000000cd31186b"]}
+
+23:09:15:617	306c	ETH: checking pool connection...
+23:09:15:617	306c	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+23:09:15:777	306c	got 243 bytes
+23:09:15:777	306c	buf: {"jsonrpc":"2.0","id":0,"result":["0xd9142b8ed21d2d0b0f47dceb5f2b5fd3f5100c246a4853cc1a24c997ce29dae0","0xc906fa38eca6c8a38bb932db61ca31b42792bf61ccc7603c4709315e71744ae5","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+23:09:15:777	306c	parse packet: 242
+23:09:15:777	306c	ETH: job is the same
+23:09:15:777	306c	new buf size: 0
+23:09:21:207	fbc	GPU0 t=34C fan=35%
+23:09:25:257	306c	got 243 bytes
+23:09:25:257	306c	buf: {"jsonrpc":"2.0","id":0,"result":["0x580e14ef18bedbcec91ef2c67a9ed226c5edef55007331504910c9cc2508742b","0xc906fa38eca6c8a38bb932db61ca31b42792bf61ccc7603c4709315e71744ae5","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+23:09:25:257	306c	parse packet: 242
+23:09:25:257	306c	ETH: job changed
+23:09:25:257	306c	new buf size: 0
+23:09:25:257	306c	ETH: 06/07/18-23:09:25 - New job from eth-eu1.nanopool.org:9999
+23:09:25:257	306c	target: 0x000000006df37f67 (diff: 10000MH), epoch 191(2.49GB)
+23:09:25:257	306c	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+23:09:25:257	306c	ETH: GPU0 0.000 Mh/s
+23:09:25:257	306c	 SC - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+23:09:25:257	306c	 SC: GPU0 0.000 Mh/s
+23:09:25:637	306c	ETH: checking pool connection...
+23:09:25:637	306c	send: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+23:09:25:717	306c	got 243 bytes
+23:09:25:717	306c	buf: {"jsonrpc":"2.0","id":0,"result":["0x580e14ef18bedbcec91ef2c67a9ed226c5edef55007331504910c9cc2508742b","0xc906fa38eca6c8a38bb932db61ca31b42792bf61ccc7603c4709315e71744ae5","0x000000006df37f675ef6eadf5ab9a2072d44268d97df837e6748956e5c6c2116"]}
+
+23:09:25:717	306c	parse packet: 242
+23:09:25:717	306c	ETH: job is the same
+23:09:25:717	306c	new buf size: 0
+23:09:25:777	2b44	em hbt: 32, dm hbt: 32, fm hbt: 94, 
+23:09:25:777	2b44	watchdog - thread 0 (gpu0), hb time 24469
+23:09:25:777	2b44	watchdog - thread 1 (gpu0), hb time 24469
+23:09:25:777	2b44	WATCHDOG: GPU error, you need to restart miner :( 
+23:09:25:781	2b44	Rebooting

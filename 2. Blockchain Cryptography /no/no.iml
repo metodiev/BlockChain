@@ -16,7 +16,7 @@
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="10 (1)" jdkType="JavaSDK" />
     <orderEntry type="library" exported="" name="org.eclipse.m2e.MAVEN2_CLASSPATH_CONTAINER" level="application" />
     <orderEntry type="library" name="Maven: org.web3j:crypto:3.3.1" level="project" />
     <orderEntry type="library" name="Maven: org.web3j:rlp:3.3.1" level="project" />
