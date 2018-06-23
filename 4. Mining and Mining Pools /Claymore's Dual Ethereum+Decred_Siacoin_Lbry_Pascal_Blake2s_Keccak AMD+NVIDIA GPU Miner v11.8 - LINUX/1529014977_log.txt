@@ -1,0 +1,116 @@
+01:22:57:272	108c30c0	Check and remove old log files...
+01:22:57:272	108c30c0	args: -epool us1.ethpool.org:3333 -ewal 0xD69af2A796A737A103F12d2f0BCC563a13900E6F -epsw x -dpool stratum+tcp://dcr.suprnova.cc:3252 -dwal Redhex.my -dpsw x 
+01:22:57:272	108c30c0	
+01:22:57:272	108c30c0	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+01:22:57:272	108c30c0	บ                Claymore's Dual GPU Miner - v11.8               บ
+01:22:57:272	108c30c0	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+01:22:57:272	108c30c0	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+01:22:57:272	108c30c0	
+01:22:57:272	108c30c0	b591 
+01:22:57:473	108c30c0	You specified default wallet address, it is good for tests only, for normal mining you must change it to your wallet address!
+01:22:57:473	108c30c0	ETH: 1 pool is specified
+01:22:57:473	108c30c0	Main Ethereum pool is us1.ethpool.org:3333
+01:22:57:473	108c30c0	DCR: 1 pool is specified
+01:22:57:473	108c30c0	Main Decred pool is dcr.suprnova.cc:3252
+01:22:57:477	108c30c0	Cannot load OpenCL library, AMD cards will be unavailable
+01:22:57:517	108c30c0	CUDA initializing...
+
+01:22:57:517	108c30c0	NVIDIA Cards available: 1 
+01:22:57:517	108c30c0	CUDA Driver Version/Runtime Version: 9.1/8.0
+01:22:57:517	108c30c0	GPU #0: GeForce GT 730, 1993 MB available, 2 compute units, capability: 3.5  (pci bus 3:0:0)
+01:22:57:517	108c30c0	Total cards: 1 
+01:22:57:517	108c30c0	
+All GPUs are 2GB, miner is completely free in this case, developer fee will not be mined at all.
+See Readme for details.
+
+01:23:01:520	108c30c0	NVML version: 9.390.48
+01:23:01:525	108c30c0	NVML: cannot get fan speed, error 3
+01:23:01:709	5a23700	ETH: Stratum - connecting to 'us1.ethpool.org' <35.185.92.48> port 3333 (unsecure)
+01:23:01:798	108c30c0	DUAL MINING MODE ENABLED: ETHEREUM+DECRED
+01:23:01:798	108c30c0	ETH: eth-proxy stratum mode
+01:23:01:798	108c30c0	Watchdog enabled
+01:23:01:798	108c30c0	Remote management (READ-ONLY MODE) is enabled on port 3333
+01:23:01:798	108c30c0	
+01:23:01:850	5a23700	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0xD69af2A796A737A103F12d2f0BCC563a13900E6F", "x"], "id": 2, "method": "eth_submitLogin"}
+
+01:23:01:850	5a23700	ETH: Stratum - Connected (us1.ethpool.org:3333) (unsecure)
+01:23:01:869	4bce700	 DCR: Stratum - connecting to 'dcr.suprnova.cc' <149.202.215.198> port 3252 (unsecure)
+01:23:01:922	4bce700	sent: {"id": 1, "method": "mining.subscribe", "params": ["dual 1.0"]}
+
+01:23:01:922	4bce700	sent: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+01:23:01:922	4bce700	sent: {"id": 2, "method": "mining.authorize", "params": ["Redhex.my","x"]}
+
+01:23:01:922	4bce700	 DCR: Stratum - Connected (dcr.suprnova.cc:3252) (unsecure)
+01:23:01:982	4bce700	buf: {"id":1,"result":[[["mining.notify","deadbeefcafebabe45400f0000000000"]],"299757cfcc43393b281aa7cb",12],"error":null}
+{"id":null,"method":"mining.set_difficulty","params":[128]}
+{"id":null,"method":"mining.notify","params":["c82d","c22e228d2c78ff6b02327bb339ee4eeb90be2fc90c917bc00000000000000000","1b32d5b41a81727bfb95cfbd139e8f65df5c6819a64cce6b6df73bb40079e015c69ce0cc528ada864ad9d6195ec762dd7e02b6fee8851ca0eabaebae1607215d0100ee5406c9c8ce05001400a49f0000af2d02195f0af4360200000047c80300552f000028ea225b0000000000000000","05000000",[],"05000000","19022daf","5b22ea28",false]}
+
+01:23:01:982	4bce700	remove first packet 462
+01:23:01:983	4bce700	remove first packet 402
+01:23:01:991	5a23700	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+01:23:01:991	5a23700	ETH: Authorized
+01:23:01:991	5a23700	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+01:23:02:027	4bce700	buf: {"id":2,"result":true,"error":null}
+
+01:23:02:027	4bce700	 DCR: Authorized
+01:23:02:132	5a23700	buf: {"id":3,"jsonrpc":"2.0","result":["0x85fc7f9967e695998be9dd0dc76302ba0dcd70af4fd6edf033eff632a807ba12","0x9e61ee571ab2ea417369c478f8b799336c24f1a4d139390c66a4475aae0a3eee","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x585855"]}
+
+01:23:02:160	6224700	Setting DAG epoch #192...
+01:23:03:477	ded1700	NVML: cannot get fan speed, error 3
+01:23:04:123	5a23700	buf: {"id":0,"jsonrpc":"2.0","result":["0x46a9b8c0533ff7dbdc9d3bde36ac5f1b9a22004b197f25aeaa8500b5e57519b4","0x9e61ee571ab2ea417369c478f8b799336c24f1a4d139390c66a4475aae0a3eee","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x585858"]}
+
+01:23:04:123	5a23700	ETH: 06/15/18-01:23:04 - New job from us1.ethpool.org:3333
+01:23:04:123	5a23700	target: 0x0000000112e0be82 (diff: 4000MH), epoch 192(2.50GB)
+01:23:04:123	5a23700	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+01:23:04:123	5a23700	ETH: GPU0 0.000 Mh/s
+01:23:04:123	5a23700	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+01:23:04:123	5a23700	 DCR: GPU0 0.000 Mh/s
+01:23:05:204	6224700	Setting DAG epoch #192 for GPU0
+01:23:05:205	6224700	Create GPU buffer for GPU0
+01:23:05:207	6224700	CUDA error - cannot allocate big buffer for DAG. Check readme.txt for possible solutions.
+01:23:06:477	ded1700	NVML: cannot get fan speed, error 3
+01:23:08:207	6224700	Set global fail flag, failed GPU0
+01:23:08:207	6224700	GPU 0 failed
+01:23:08:207	6a25700	Setting DAG epoch #192 for GPU0
+01:23:08:207	6a25700	GPU 0, CUDA error 11 - cannot write buffer for DAG
+01:23:09:477	ded1700	NVML: cannot get fan speed, error 3
+01:23:11:208	6a25700	Set global fail flag, failed GPU0
+01:23:11:208	6a25700	GPU 0 failed
+01:23:12:134	5a23700	ETH: checking pool connection...
+01:23:12:134	5a23700	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+01:23:12:274	5a23700	buf: {"id":3,"jsonrpc":"2.0","result":["0x46a9b8c0533ff7dbdc9d3bde36ac5f1b9a22004b197f25aeaa8500b5e57519b4","0x9e61ee571ab2ea417369c478f8b799336c24f1a4d139390c66a4475aae0a3eee","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x585858"]}
+
+01:23:12:477	ded1700	NVML: cannot get fan speed, error 3
+01:23:14:499	5a23700	buf: {"id":0,"jsonrpc":"2.0","result":["0xfee0dbeb50a979a25e0eabe9322c9fbdd5daef8759c0426e77de496170d1ad56","0x9e61ee571ab2ea417369c478f8b799336c24f1a4d139390c66a4475aae0a3eee","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x585859"]}
+
+01:23:14:499	5a23700	ETH: 06/15/18-01:23:14 - New job from us1.ethpool.org:3333
+01:23:14:499	5a23700	target: 0x0000000112e0be82 (diff: 4000MH), epoch 192(2.50GB)
+01:23:14:499	5a23700	ETH - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0, Time: 00:00
+01:23:14:499	5a23700	ETH: GPU0 0.000 Mh/s
+01:23:14:499	5a23700	 DCR - Total Speed: 0.000 Mh/s, Total Shares: 0, Rejected: 0
+01:23:14:500	5a23700	 DCR: GPU0 0.000 Mh/s
+01:23:15:478	ded1700	NVML: cannot get fan speed, error 3
+01:23:18:478	ded1700	NVML: cannot get fan speed, error 3
+01:23:21:478	ded1700	NVML: cannot get fan speed, error 3
+01:23:22:133	5a23700	sent: {"id":6,"jsonrpc":"2.0","method":"eth_submitHashrate","params":["0x0", "0x0000000000000000000000000000000000000000000000000000000007ff434c"]}
+
+01:23:22:136	5a23700	ETH: checking pool connection...
+01:23:22:136	5a23700	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+01:23:22:274	5a23700	buf: {"id":6,"jsonrpc":"2.0","result":true}
+
+01:23:22:414	5a23700	buf: {"id":3,"jsonrpc":"2.0","result":["0xfee0dbeb50a979a25e0eabe9322c9fbdd5daef8759c0426e77de496170d1ad56","0x9e61ee571ab2ea417369c478f8b799336c24f1a4d139390c66a4475aae0a3eee","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x585859"]}
+
+01:23:24:479	ded1700	NVML: cannot get fan speed, error 3
+01:23:27:479	ded1700	NVML: cannot get fan speed, error 3
+01:23:27:479	ded1700	NVML: cannot get fan speed, error 3
+01:23:27:479	ded1700	GPU0 t=43C fan=0%
+01:23:27:504	e6d2700	em hbt: 1, dm hbt: 0, fm hbt: 84, 
+01:23:27:504	e6d2700	watchdog - thread 0 (gpu0), hb time 19296
+01:23:27:504	e6d2700	watchdog - thread 1 (gpu0), hb time 19296
+01:23:27:504	e6d2700	WATCHDOG: GPU error, you need to restart miner :( 
+01:23:27:510	6a25700	NVML: cannot get fan speed, error 3

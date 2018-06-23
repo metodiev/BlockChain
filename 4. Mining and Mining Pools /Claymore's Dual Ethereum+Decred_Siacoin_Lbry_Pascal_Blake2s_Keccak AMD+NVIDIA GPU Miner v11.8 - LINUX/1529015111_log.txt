@@ -1,0 +1,79 @@
+01:25:11:552	d8b200c0	Check and remove old log files...
+01:25:11:553	d8b200c0	args: -epool us1.ethpool.org:3333 -ewal 0xD69af2A796A737A103F12d2f0BCC563a13900E6F -epsw x -dpool stratum+tcp://dcr.suprnova.cc:3252 -dwal Redhex.my -dpsw x 
+01:25:11:553	d8b200c0	
+01:25:11:553	d8b200c0	ษออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออป
+01:25:11:553	d8b200c0	บ                Claymore's Dual GPU Miner - v11.8               บ
+01:25:11:553	d8b200c0	บ              ETH + DCR/SIA/LBC/PASC/BLAKE2S/KECCAK             บ
+01:25:11:553	d8b200c0	ศออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออออผ
+01:25:11:553	d8b200c0	
+01:25:11:553	d8b200c0	b591 
+01:25:11:753	d8b200c0	You specified default wallet address, it is good for tests only, for normal mining you must change it to your wallet address!
+01:25:11:753	d8b200c0	ETH: 1 pool is specified
+01:25:11:753	d8b200c0	Main Ethereum pool is us1.ethpool.org:3333
+01:25:11:753	d8b200c0	DCR: 1 pool is specified
+01:25:11:753	d8b200c0	Main Decred pool is dcr.suprnova.cc:3252
+01:25:11:758	d8b200c0	Cannot load OpenCL library, AMD cards will be unavailable
+01:25:11:774	d8b200c0	CUDA initializing...
+
+01:25:11:774	d8b200c0	NVIDIA Cards available: 1 
+01:25:11:774	d8b200c0	CUDA Driver Version/Runtime Version: 9.1/8.0
+01:25:11:774	d8b200c0	GPU #0: GeForce GT 730, 1993 MB available, 2 compute units, capability: 3.5  (pci bus 3:0:0)
+01:25:11:774	d8b200c0	Total cards: 1 
+01:25:11:774	d8b200c0	
+All GPUs are 2GB, miner is completely free in this case, developer fee will not be mined at all.
+See Readme for details.
+
+01:25:15:777	d8b200c0	NVML version: 9.390.48
+01:25:15:783	d8b200c0	NVML: cannot get fan speed, error 3
+01:25:15:918	cda23700	ETH: Stratum - connecting to 'us1.ethpool.org' <35.185.92.48> port 3333 (unsecure)
+01:25:16:006	d8b200c0	DUAL MINING MODE ENABLED: ETHEREUM+DECRED
+01:25:16:007	d8b200c0	ETH: eth-proxy stratum mode
+01:25:16:007	d8b200c0	Watchdog enabled
+01:25:16:007	d8b200c0	Remote management (READ-ONLY MODE) is enabled on port 3333
+01:25:16:007	d8b200c0	
+01:25:16:008	ccde0700	 DCR: Stratum - connecting to 'dcr.suprnova.cc' <149.202.215.198> port 3252 (unsecure)
+01:25:16:051	cda23700	sent: {"worker": "eth1.0", "jsonrpc": "2.0", "params": ["0xD69af2A796A737A103F12d2f0BCC563a13900E6F", "x"], "id": 2, "method": "eth_submitLogin"}
+
+01:25:16:052	cda23700	ETH: Stratum - Connected (us1.ethpool.org:3333) (unsecure)
+01:25:16:062	ccde0700	sent: {"id": 1, "method": "mining.subscribe", "params": ["dual 1.0"]}
+
+01:25:16:062	ccde0700	sent: {"id": 5, "method": "mining.extranonce.subscribe", "params": []}
+
+01:25:16:062	ccde0700	sent: {"id": 2, "method": "mining.authorize", "params": ["Redhex.my","x"]}
+
+01:25:16:062	ccde0700	 DCR: Stratum - Connected (dcr.suprnova.cc:3252) (unsecure)
+01:25:16:143	ccde0700	buf: {"id":1,"result":[[["mining.notify","deadbeefcafebabeb0a3330000000000"]],"4ab2d1f8429c10af98ab386b",12],"error":null}
+
+01:25:16:153	ccde0700	buf: {"id":null,"method":"mining.set_difficulty","params":[128]}
+{"id":null,"method":"mining.notify","params":["f7c4","c22e228d2c78ff6b02327bb339ee4eeb90be2fc90c917bc00000000000000000","75d67802f0bc9536fe720b6366a518ebd8fdc26c9e72d49e6693b73c616fde2f44d108a5bb695192f5fac91d018479d84a37921a622712e3e1b16a7fdc02176f0100ee5406c9c8ce05001400a49f0000af2d02195f0af4360200000047c8030051300000aeea225b0000000000000000","05000000",[],"05000000","19022daf","5b22eaae",true]}
+
+01:25:16:153	ccde0700	remove first packet 401
+01:25:16:193	cda23700	buf: {"id":2,"jsonrpc":"2.0","result":true}
+
+01:25:16:193	cda23700	ETH: Authorized
+01:25:16:193	cda23700	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+01:25:16:198	ccde0700	buf: {"id":2,"result":true,"error":null}
+
+01:25:16:198	ccde0700	 DCR: Authorized
+01:25:16:334	cda23700	buf: {"id":3,"jsonrpc":"2.0","result":["0x695b247952f7e109a2a82868c4059d24d23666107a1d1c648a46d8def8bac4e9","0x9e61ee571ab2ea417369c478f8b799336c24f1a4d139390c66a4475aae0a3eee","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x58585e"]}
+
+01:25:16:406	cea25700	Setting DAG epoch #192...
+01:25:17:758	d612e700	NVML: cannot get fan speed, error 3
+01:25:19:346	cea25700	Setting DAG epoch #192 for GPU0
+01:25:19:346	cea25700	Create GPU buffer for GPU0
+01:25:19:348	cea25700	CUDA error - cannot allocate big buffer for DAG. Check readme.txt for possible solutions.
+01:25:20:758	d612e700	NVML: cannot get fan speed, error 3
+01:25:22:348	cea25700	Set global fail flag, failed GPU0
+01:25:22:348	cea25700	GPU 0 failed
+01:25:22:349	ce224700	Setting DAG epoch #192 for GPU0
+01:25:22:349	ce224700	GPU 0, CUDA error 11 - cannot write buffer for DAG
+01:25:23:759	d612e700	NVML: cannot get fan speed, error 3
+01:25:25:349	ce224700	Set global fail flag, failed GPU0
+01:25:25:349	ce224700	GPU 0 failed
+01:25:26:336	cda23700	ETH: checking pool connection...
+01:25:26:336	cda23700	sent: {"worker": "", "jsonrpc": "2.0", "params": [], "id": 3, "method": "eth_getWork"}
+
+01:25:26:468	cda23700	buf: {"id":3,"jsonrpc":"2.0","result":["0x695b247952f7e109a2a82868c4059d24d23666107a1d1c648a46d8def8bac4e9","0x9e61ee571ab2ea417369c478f8b799336c24f1a4d139390c66a4475aae0a3eee","0x0112e0be826d694b2e62d01511f12a6061fbaec8bc02357593e70e52ba","0x58585e"]}
+
+01:25:26:759	d612e700	NVML: cannot get fan speed, error 3
